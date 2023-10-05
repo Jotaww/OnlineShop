@@ -1,0 +1,23 @@
+var map = document.querySelector('.map')
+var snake = document.querySelector('.snake')
+
+window.addEventListener('keydown', function(event) {
+  if (event.key === ' ') {
+    
+    var intervalo = setInterval(andar, 1000);
+    
+    var inicio = 40;
+
+    function andar() {
+
+      console.log(inicio)
+      inicio += 5
+
+      snake.style.left = 84+'%';
+
+    }
+
+    
+    
+  }
+});

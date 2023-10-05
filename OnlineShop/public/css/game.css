@@ -1,0 +1,256 @@
+body {
+  background-color: #151d27;
+}
+
+.gameInfo {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.carousel {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagemJogo img {
+  width: 100%;
+  height: 400px;
+}
+
+.nomeJogo {
+  background-color: #263241;
+  height: 83px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position:relative;
+  text-align:center;
+  border-radius: 5px;
+}
+
+.nomeJogo h2 {
+  font-size: 1.5em;
+}
+
+.nomeJogo div {
+  position:absolute;
+  z-index:1;
+  top:75%;
+  left:75%;
+  display: flex;
+}
+
+.nomeJogo div button {
+  padding:5px;
+  border:0 none;
+}
+
+.sobre {
+  width: 40%;
+  min-height: 500px;
+  background-color: #263241;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.sobre h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.sobre span {
+  color: #90a0b0;
+  font-size: 0.9em;
+}
+
+.infoJogo {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 200px;
+}
+
+.infoJogo p {
+  color: white;
+  font-weight: bold;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.infoJogo a {
+  background-color: #151d27;
+  padding: 4px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.infoJogo a {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.gameMode {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#priceGame {
+  font-size: 1em;
+  background-color: #961414;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+  border: 1px solid #9e4646;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+strong {
+  color: white;
+}
+
+#discountGame {
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  background: #f66;
+  margin-right: 10px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin: 0;
+}
+
+#buyGame {
+  background-color: #74ae22;
+  padding: 8px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.requisitos {
+  color: white;
+  width: 100%;
+}
+
+.requisitos div p {
+  font-size: 0.8em;
+  color: #90a0b0;
+}
+
+.requisitos h3 {
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+  .carousel {
+    width: 75%;
+  }
+  .infoJogo p {
+    font-size: 0.67;
+  }
+  .sobre span {
+    font-size: 0.8em;
+  }
+  #discountGame {
+    width: 50px;
+  }
+  #buyGame {
+    width: 100%;
+  }
+  .nomeJogo div {
+    top:75%;
+    left:73%;
+  }
+  .nomeJogo h2 {
+    font-size: 1.3em;
+  }
+  #categoryGame {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nomeJogo div {
+    top:75%;
+    left:76%;
+  }
+  .gameInfo {
+    flex-direction: column;
+  }
+  .carousel {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .sobre {
+    width: 100%;
+    min-height: 375px;
+  }
+  .requisitos {
+    width: 100%;
+  }
+  #categoryGame {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nomeJogo div {
+    top:75%;
+    left:70%;
+  }
+  .requisitos {
+    width: 100%;
+  }
+  .imagemJogo img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .nomeJogo div {
+    top:82%;
+    left:65%;
+  }
+  .nomeJogo h2 {
+    font-size: 1.1em;
+  }
+  #discountGame {
+    padding: 6px;
+  }
+  #buyGame {
+    font-size: 0.8em;
+    padding: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .nomeJogo div {
+    top:82%;
+    left:53%;
+  }
+  .nomeJogo h2 {
+    font-size: 0.8em;
+  }
+}

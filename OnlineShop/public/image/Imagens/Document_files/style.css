@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(187, 187, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid black;
+  position: relative;
+}
+
+.snake {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 50px;
+  height: 5px;
+  background-color: black;
+}

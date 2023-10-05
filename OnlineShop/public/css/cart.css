@@ -1,0 +1,235 @@
+body {
+  background-color: #151d27;
+}
+
+.container {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+}
+
+.titleCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleCart h1 {
+  font-weight: 300;
+  font-size: 2.2em;
+}
+
+.cartFinalize {
+  width: 65%;
+}
+
+.cart {
+  background-color: #263241;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cart > div {
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+}
+
+.prodValor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamesCart {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.imgGame {
+  width: 30%;
+}
+
+.imgGame img {
+  width: 100%;
+  height: 90px;
+}
+
+.nameGame {
+  width: 50%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameGame span i {
+  font-size: 0.8em;
+  margin-right: 5px;
+  color: #5f738a;
+}
+
+.valorGame {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.discountGame {
+  color: #96a6b7;
+  font-weight: 400;
+  text-decoration: line-through;
+  font-size: 0.75em;
+  text-align: start;
+}
+
+.priceGame {
+  color: #96a6b7;
+  font-size: 1.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.removeGame {
+  color: red;
+  text-decoration: underline;
+  font-size: 0.8em;
+  display: none;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment {
+  background-color: #263241;
+  width: 35%;
+  border-radius: 5px;
+}
+
+.payment > div {
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+}
+
+.paymentMethods ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.paymentMethods i {
+  display: inline-block;
+  width: 40px;
+  height: 26px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-size: contain;
+}
+
+.paymentMethods p {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  color: #09c;
+  font-size: 12px;
+}
+
+.visa {
+  background-image: url(https://assets.nuuvem.com/image/upload/v1/tag_group/56eb4810d2773413be00004a/tags/f4ba4mlmaqzdu9jqsf3b.png);
+}
+
+.mastercard {
+  background-image: url(https://assets.nuuvem.com/image/upload/v1/tag_group/56eb4810d2773413be00004a/tags/ovnd2w6i9nhmurdps0bg.png);
+}
+
+.elo {
+  background-image: url(https://assets.nuuvem.com/image/upload/v1/tag_group/56eb4810d2773413be00004a/tags/itjkuemdj9t1nxmh6lrl.png);
+}
+
+.pix {
+  background-image: url(https://assets.nuuvem.com/image/upload/v1/tag_group/56eb4810d2773413be00004a/tags/hygwpks4jsdotwqhedy1.png);
+}
+
+.boleto {
+  background-image: url(https://assets.nuuvem.com/image/upload/v1/tag_group/56eb4810d2773413be00004a/tags/ayo6lelxjqd70jjiazvn.png);
+}
+
+.finalize {
+  background-color: #263241;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.finalize div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.finalizeMobile {
+  background-color: #263241;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+
+.finalizeMobile div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.saved {
+  color: #3c6;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.totalPrice {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#finalizeBtn {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#finalizeBtn button {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .imgGame img {
+    height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .finalize {
+    display: none;
+  }
+  .finalizeMobile {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .cartFinalize {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .payment {
+    width: 100%;
+  }
+}

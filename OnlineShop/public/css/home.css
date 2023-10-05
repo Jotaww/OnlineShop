@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 13vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.logoLogin {
+  font-size: 44px;
+  letter-spacing: 4px;
+  color: black;
+}
+
+#tirarPadding {
+  padding: 0;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 9vh;
+  box-shadow: 0px 4px 5px black;
+  z-index: 5;
+}
+
+.pc li {
+  height: 100%;
+}
+
+.pc li a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  height: 100%;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  padding: 0px 20px;
+}
+
+#liSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-top: 3px solid transparent;
+}
+
+#borderLaranja:hover {
+  border-top: 3px solid orange;
+}
+
+#borderRoxo:hover {
+  border-top: 3px solid rgb(212, 0, 255);
+}
+
+#borderAzul:hover {
+  border-top: 3px solid rgb(0, 255, 213);
+}
+
+#borderVerde:hover {
+  border-top: 3px solid rgb(0, 255, 21);
+}
+
+#borderVermelho:hover {
+  border-top: 3px solid rgb(255, 30, 0);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.dropdown-content a i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+#deviceMobile {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 43vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 1;
+  }
+  .dropdown-toggle:hover {
+    opacity: 0.7;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #liSearch {
+    padding: 10px;
+    width: 100%;
+  }
+  #liSearch form {
+    width: 100%;
+    justify-content: center;
+  }
+  #liSearch form input {
+    width: 50%;
+    margin: 0;
+  }
+  #liSearch form button {
+    margin: 0;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form input[type="text"] {
+  padding: 6px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #263241;
+  color: white;
+  margin-left: 20px;
+}
+
+.search-form input[type="text"]:focus {
+  border: none;
+  outline: 0;
+  color: white;
+}
+
+.search-form button {
+  padding: 6px 12px;
+  background-color: #263241;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+.dropdown-menu {
+  width: 30vw;
+}
+
+.dropdown-menu li {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.dropdown-menu li a {
+  color: black;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: #010611;
+}
+
+.outros {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  border-bottom: 1px solid #96a6b7;
+}
+
+.outros a {
+  color: #96a6b7;
+  padding: 10px;
+}
+
+.social {
+  margin-top: 20px;
+  color: white;
+  border-bottom: 1px solid #96a6b7;
+}
+
+.social div {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.social div a {
+  border: 1px solid #151d27;
+  background-color: #384657;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.social div a i {
+  margin-right: 5px;
+}
+
+.politica {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.politica span {
+  color: #96a6b7;
+  font-size: 0.7em;
+}
+
+.footerLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+}
+
+#footer {
+  margin-top: 50px;
+}
+
+#facebook {
+ color: rgb(24, 116, 202);
+}
+
+#github {
+  color: rgb(161, 141, 141);
+}
+
+#instagram {
+  color: rgb(214, 104, 122);
+}
+
+#discord {
+  color: rgb(117, 173, 173);
+}
+
+#twitter {
+  color: rgb(33, 125, 179);
+}
+
+#cartCount {
+  position: relative;
+  margin-right: 8px;
+}
+
+#cartCount span {
+  position: absolute;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  left: 60%;
+  top: -10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  font-size: 0.7em;
+}
+
+@media (max-width: 769px) {
+  .nav-list {
+    width: 60vw;
+  }
+  .social div {
+    width: 100%;
+    margin: 0;
+  }
+  .social div a {
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
+  .politica {
+    flex-direction: column;
+  }
+  .politica span {
+    margin-bottom: 10px;
+  }
+  .footerLocation {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  .outros a {
+    font-size: 0.9em;
+  }
+}

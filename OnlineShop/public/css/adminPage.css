@@ -1,0 +1,18 @@
+body {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  margin-left: 280px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+}
+
+#sidebar {
+  position: fixed;
+  height: 100%;
+}

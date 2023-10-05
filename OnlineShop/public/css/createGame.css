@@ -1,0 +1,17 @@
+form {
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container > form {
+  height: 100%;
+}
+
+.requerimentosDiv {
+  display: none;
+}
